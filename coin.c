@@ -6,6 +6,12 @@ int main(){
   srand((unsigned int)time(NULL));
   int ransu;
   int hcut = 0,tcut = 0;
+  char c[20];
+
+  printf("Who are you?\n");
+  printf("> ");
+  scanf("%s", c);
+  printf("Hello %s\n",c);
 
   printf("Tossing a coin...\n");
   
@@ -23,9 +29,9 @@ int main(){
   printf("Heads: %d, Tails: %d\n", hcut, tcut);
 
   if(hcut > tcut){
-    printf("you won\n");
+    printf("%s won!\n",c);
   }else{
-    printf("you lost\n");
+    printf("%s lost!\n",c);
   }
     
   return 0;
