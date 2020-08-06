@@ -21,6 +21,12 @@ int main(){
     }
   }
   printf("Heads: %d, Tails: %d\n", hcut, tcut);
+
+  if(hcut > tcut){
+    printf("you won\n");
+  }else{
+    printf("you lost\n");
+  }
     
   return 0;
 }
